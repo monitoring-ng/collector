@@ -42,7 +42,7 @@ class MetricEndpoint(MethodView):
                 },
                 'time': int(metric['timestamp']),
                 'fields': {
-                    'value': metric['value']
+                    'value': float(metric['value'])
                 }
             })
 
